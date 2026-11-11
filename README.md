@@ -30,7 +30,7 @@ Theta/beta ratio at Cz: ADHD median 2.13, controls 3.02 (Mann-Whitney p = 0.0006
 ## Read before trusting any of this
 
 - The dataset description says the ADHD group had taken Ritalin for up to six months. Stimulants change the EEG.
-- Beta and gamma are strongest at the edge electrodes, which is what muscle tension looks like. I did not run ICA.
+- Beta and gamma are strongest at the edge electrodes, which is what muscle tension looks like. No ICA was run.
 - Task recordings of varying length, where most theta/beta studies use resting EEG.
 - One dataset from one site. Sampling rate taken as 128 Hz from the authors.
 
