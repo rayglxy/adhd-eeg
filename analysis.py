@@ -155,7 +155,7 @@ def fig_theta_beta(D):
                 mann_whitney_p=float(p), auc_of_ratio_alone=float(auc))
 
 
-# ── the honest-split test ───────────────────────────────────────────────────
+# ── window split against child split ───────────────────────────────────────────────────
 def fig_split(D, n_perm=100):
     X = np.log(D['rel']).reshape(len(D['y']), -1)                 # 19 channels x 5 bands per window
     y, g = D['y'], D['subj']
@@ -192,10 +192,10 @@ def fig_split(D, n_perm=100):
         ax.text(-0.06, 100 * r['by_window'], f"{name}  {100 * r['by_window']:.0f}%", ha='right', va='center', fontsize=9)
         top = r['by_child'] == max(res[k]['by_child'] for k in models)
         ax.text(1.06, 100 * r['by_child'] + (1.2 if top else -1.2), f"{100 * r['by_child']:.0f}%", ha='left', va='center', fontsize=9)
-    ax.set_xticks([0, 1], ['Windows shuffled\n(same child in train and test)', 'Whole children held out\n(the honest test)'])
+    ax.set_xticks([0, 1], ['Windows shuffled\n(same child in train and test)', 'Whole children held out'])
     ax.set_xlim(-0.95, 1.5); ax.set_ylim(40, 90); ax.set_ylabel('Accuracy (%)')
     ax.set_title('The same classifier, tested two ways'); ax.grid(axis='x', visible=False)
-    save(fig, 'honest_split')
+    save(fig, 'split_comparison')
     return res
 
 
