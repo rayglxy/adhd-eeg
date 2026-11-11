@@ -1,0 +1,96 @@
+{
+ "children": 121,
+ "adhd": 61,
+ "control": 60,
+ "windows": 4058,
+ "theta_beta_at_Cz": {
+  "median_adhd": 2.1334192752838135,
+  "median_control": 3.024852991104126,
+  "cohen_d": -0.6430301666259766,
+  "mann_whitney_p": 0.0006408600660024989,
+  "auc_of_ratio_alone": 0.31994535519125683
+ },
+ "scalp_maps": {
+  "theta": {
+   "strongest_channel": "Fz",
+   "strongest_d": 0.4015498161315918,
+   "n_significant": 0,
+   "significant": []
+  },
+  "alpha": {
+   "strongest_channel": "O1",
+   "strongest_d": 0.5179582834243774,
+   "n_significant": 1,
+   "significant": [
+    "O1"
+   ]
+  },
+  "beta": {
+   "strongest_channel": "Cz",
+   "strongest_d": 0.609748363494873,
+   "n_significant": 9,
+   "significant": [
+    "F4",
+    "C3",
+    "C4",
+    "F8",
+    "T7",
+    "T8",
+    "Fz",
+    "Cz",
+    "Pz"
+   ]
+  },
+  "theta / beta": {
+   "strongest_channel": "F4",
+   "strongest_d": -0.8389651775360107,
+   "n_significant": 11,
+   "significant": [
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P4",
+    "O2",
+    "F8",
+    "T7",
+    "T8",
+    "Cz",
+    "Pz"
+   ]
+  }
+ },
+ "classifier": {
+  "Logistic regression": {
+   "by_window": 0.7606704609646913,
+   "by_child": 0.6166946370131694,
+   "by_child_sd": 0.012733805836213875,
+   "by_child_runs": [
+    0.6050736372932739,
+    0.631206414992443,
+    0.6293381265213429,
+    0.61853466598536,
+    0.5993203402734266
+   ]
+  },
+  "Random forest": {
+   "by_window": 0.8429778355493734,
+   "by_child": 0.6081433826068936,
+   "by_child_sd": 0.01766112505701467,
+   "by_child_runs": [
+    0.6145976407628679,
+    0.6224166315790425,
+    0.6290371223344521,
+    0.5897287091074627,
+    0.5849368092506428
+   ]
+  },
+  "chance": {
+   "mean": 0.4892270710171024,
+   "p95": 0.5448268343655577,
+   "p_value_logistic": 0.009900990099009901,
+   "n_permutations": 100
+  }
+ },
+ "gif_MB": 2.29
+}

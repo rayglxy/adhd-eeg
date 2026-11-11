@@ -1,0 +1,39 @@
+# Shared figure style for every repo in the portfolio.
+# Use with:  plt.style.use('figures/neuro.mplstyle')
+figure.dpi: 110
+savefig.dpi: 300
+savefig.bbox: tight
+figure.facecolor: fcfcfb
+axes.facecolor: fcfcfb
+savefig.facecolor: fcfcfb
+
+font.family: sans-serif
+font.sans-serif: Helvetica Neue, Helvetica, Arial, DejaVu Sans
+font.size: 10
+axes.titlesize: 11
+axes.titleweight: bold
+axes.titlelocation: left
+axes.labelsize: 10
+xtick.labelsize: 9
+ytick.labelsize: 9
+legend.fontsize: 9
+legend.frameon: False
+
+text.color: 0b0b0b
+axes.labelcolor: 52514e
+xtick.color: 52514e
+ytick.color: 52514e
+axes.edgecolor: c9c8c2
+axes.linewidth: 0.8
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+axes.grid.axis: y
+grid.color: e6e5e0
+grid.linewidth: 0.6
+axes.axisbelow: True
+
+lines.linewidth: 2
+lines.markersize: 6
+# categorical order: blue, orange, aqua, yellow, magenta, green, violet
+axes.prop_cycle: cycler('color', ['2a78d6', 'eb6834', '1baf7a', 'eda100', 'e87ba4', '008300', '6250d6'])

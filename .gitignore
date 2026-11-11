@@ -1,0 +1,5 @@
+adhdata.csv
+data/features.npz
+.DS_Store
+__pycache__/
+*.pyc
